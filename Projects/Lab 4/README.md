@@ -21,7 +21,6 @@ In this lab we practiced three similar implementations of 4-input logic which re
 - Product of Sums (POS): Group 0's in powers of two (1, 2, 4, 8) on a KMap to find the "AND of OR's"
 
 We also verified the functional equivalence of these three different implementations of the logic, by comparing the outputs produced by each function when processing the same input. The equivalence was tested using an XOR-based program `test.v`, which immediatley flags any mismatch and displays information regaurding the issues origin. This was repeated with sixteen different input patterns, all of which returned True (meaning the outputs of each input all returned the same), confirming that the Naive, SOP, and POS equations will produce Truth Tables containing the same output data.
-
 <br>
 
 ## Lab Questions
@@ -49,5 +48,6 @@ Example: Y = (A | ~C | D) & (~A | B) & (~B | ~D)  <-- AND("Product") of OR's("Su
 - We can use XOR comparator within the test.v file to check if signals match, by checking the output of each set of inputs. XOR will output 1 if the inputs differ, and 0 if the inputs are equal. So, if the output of every set of inputs is 0, we know that each signal tested matches and is equal.
   
 - If the testing suite goes through 16 cases and checks for equivalence between inputs, and it returns a 1, it will output a short message detailing which optimized form does not match the "naive" form. When an message like that is output, it helps to indicate and identify where the problem may be and how to fix it.
+
 
 <br>
