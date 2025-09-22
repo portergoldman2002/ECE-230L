@@ -38,7 +38,8 @@ Example: Y = (A | ~C | D) & (~A | B) & (~B | ~D)  <-- AND("Product") of OR's("Su
 
 ### Open the test.v file – how are we able to check that the signals match using XOR?
 
-- We can use XOR within the test.v file to check if the signals match, by checking the output of each set of inputs. XOR will output 1 if the inputs differ, and 0 if the inputs are equal. So, if the output of every set of inputs is 0, we know that each signal tested matches and is equal. 
+- We can use XOR within the test.v file to check if the signals match, by checking the output of each set of inputs. XOR will output 1 if the inputs differ, and 0 if the inputs are equal. So, if the output of every set of inputs is 0, we know that each signal tested matches and is equal.
+  
 - If the testing suite goes through 16 cases and checks for equivalence between inputs, and it output a short message detailing which optimized form does not match the "naive" form, and halts. When an message like that it output, it is an indication of where the problem may be and how to fix it.
 
 
