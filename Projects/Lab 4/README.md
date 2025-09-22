@@ -21,7 +21,7 @@ Summarize your learnings from the lab here.
 
 ### Why are the groups of 1’s (or 0’s) that we select in the KMap able to go across edges?
 
-The groups of 1's or 0's that we select in the KMap are able to go across edges because Kmaps exist according to Gray Code Order, which means that adjacent cells, including the ones that "wrap around" or "go across edges" we are reffering to, differ by exactly one variable. In a conceptual formation, the Kmap can be thought as like a torus, where the right and left edges touch and the top and bottom edges touch.
+- The groups of 1's or 0's that we select in the KMap are able to go across edges because Kmaps exist according to Gray Code Order, which means that adjacent cells, including the ones that "wrap around" or "go across edges" we are reffering to, differ by exactly one variable. In a conceptual formation, the Kmap can be thought as like a torus, where the right and left edges touch and the top and bottom edges touch.
 So, when we are grouping cells, we are required to select cells that differ by only one literal, and edge cases are then also valid. Allowing us to form larger "power of two" rectangles (1, 2, 4, or 8) to express more literals as we minimize the expression.
 
 
