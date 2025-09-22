@@ -1,3 +1,4 @@
+<br>
 # Lab 04 - SOP/POS and KMaps
 
 In this lab, you’ve learned how to apply KMaps, Sum Of Products and Products of
@@ -12,6 +13,7 @@ using an implemented design on your Basys3 boards.
 | Question 1 | Your answers to the question | 25% |
 | Question 2 | Your answers to the question | 25% |
 | Question 3 | Your answers to the question | 25% |
+<br>
 
 ## Lab Summary
 
@@ -21,6 +23,7 @@ In this lab we practiced three similar implementations of 4-input logic which re
 - Product of Sums (POS): Group 0's in powers of two (1, 2, 4, 8) on a KMap to find the "AND of OR's"
 
 We also verified the functional equivalence of these three different implementations of the logic, by comparing the outputs produced by each function when processing the same input. The equivalence was tested using an XOR-based program `test.v`, which immediatley flags any mismatch and displays information regaurding the issues origin. This was repeated with sixteen different input patterns, all of which returned True (meaning the outputs of each input all returned the same), confirming that the Naive, SOP, and POS equations will produce Truth Tables containing the same output data.
+
 <br>
 
 ## Lab Questions
