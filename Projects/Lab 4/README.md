@@ -22,7 +22,7 @@ In this lab we practiced three similar implementations of 4-input logic which re
 
 We also verified the functional equivalence of these three different implementations of the logic, by comparing the outputs produced by each function when processing the same input. The equivalence was tested using an XOR-based program `test.v`, which immediatley flags any mismatch and displays information regaurding the issues origin. This was repeated with sixteen different input patterns, all of which returned True (meaning the outputs of each input all returned the same), confirming that the Naive, SOP, and POS equations will produce Truth Tables containing the same output data.
 
-### 
+&nbsp
 ## Lab Questions
 
 ### 1.   Why are the groups of 1’s (or 0’s) that we select in the KMap able to go across edges?
