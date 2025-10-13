@@ -23,15 +23,16 @@ Summary
 
 ### 1 - Explain the differences between our Half Adder from last lab and the Half Subtractor from this lab.
 	The main difference is that the truth tables along with the equations derived create different
-	results.
+	results. The Half Adder performs addition by calculating the XOR of the two inputs (Sum), and a "Carry" output if both inputs are 1. On the other hand, the Half Subtractor performs subtraction by using 		the same XOR operation, but instead calculates for a difference output by replacing the "Carry" logic with a "Borrow" logic. The "Borrow", happens if first input is less than the second input, and is 		calculated as the inverse of A AND B. While the two function similarly in structure, their behaviors are opposite when looking at their final output.
+	
 	
 ### 2 - What about the end around carry of One’s Complement makes it hard to use and implement?
 	Due to the carry around we were forced to essentially do 2 rounds of "addition"(since subtraction is
-	essentially adding a negative number)first round to actually get the carry around but the 2nd to do the
+	essentially adding a negative number) the first round, to actually get the carry around but the 2nd to do the
 	"real" addition.
 	
 ### 3 - What is the edge case and problem with Two’s Complement number representation?
 	One issue is that because there is only one 0 being 0000, that means that the negative side has an
-	extra negative number that can be represented thus making it assymetrical	
+	extra negative number which can be represented (-8 as 1000) thus making it assymetrical. In our case of a 4-bit system, the total range of Two’s Complement numbers ranges from −8 to +7. However, although 	that asymmetry is not usually a major issue when computing, it is important to note that it does limit the largest positive number which can be represented as compared to the lowest negative number.
 
 	
