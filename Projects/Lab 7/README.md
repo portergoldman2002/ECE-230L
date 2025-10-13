@@ -28,7 +28,7 @@ results. The Half Adder performs addition by calculating the XOR of the two inpu
 
 	
 ### 2 - What about the end around carry of One’s Complement makes it hard to use and implement?
-Due to the carry around we were forced to essentially do 2 rounds of "addition"(since subtraction is essentially adding a negative number) the first round, to actually get the carry around but the 2nd to do the "real" addition.
+Due to the carry around we were forced to essentially do 2 rounds of "addition"(since subtraction is essentially adding a negative number). The first round, to find and get the carry, and then the second to bring it back around and add it back in. Both steps are required to do the "real" addition, and the additional step makes the hardware more complex and slow overall. 
 
 <br>
 
